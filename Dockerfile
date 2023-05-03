@@ -6,3 +6,5 @@ COPY squid.conf /etc/squid/squid.conf
 COPY passwords /etc/squid/passwords
 
 EXPOSE 3128
+ENTRYPOINT ["-f","/etc/squid/squid.conf","-NYC"]
+
