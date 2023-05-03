@@ -6,3 +6,5 @@ COPY squid.conf /etc/squid/squid.conf
 COPY passwords /etc/squid/passwords
 
 CMD tail -f /var/log/squid
+
+EXPOSE 3128
