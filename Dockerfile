@@ -5,6 +5,6 @@ ENV TZ=Asia/Kolkata
 COPY squid.conf /etc/squid/squid.conf
 COPY passwords /etc/squid/passwords
 
-EXPOSE 3128:8080
+EXPOSE 3128
 ENTRYPOINT ["entrypoint.sh","-f","/etc/squid/squid.conf","-NYC"]
 
